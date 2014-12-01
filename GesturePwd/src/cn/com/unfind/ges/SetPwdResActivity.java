@@ -1,4 +1,4 @@
-package cn.com.unfind.ges;
+ï»¿package cn.com.unfind.ges;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.TextView;
 /**
- * ×÷ÓÃ£ºÏÔÊ¾ÊÖÊÆÃÜÂëÉèÖÃ½á¹û½çÃæ
- * ×÷Õß£ºunfind
- * Ê±¼ä£º2013Äê10ÔÂ29ÈÕ 16:34:59
+ * ä½œç”¨ï¼šæ˜¾ç¤ºæ‰‹åŠ¿å¯†ç è®¾ç½®ç»“æœç•Œé¢
+ * ä½œè€…ï¼šunfind
+ * æ—¶é—´ï¼š2013å¹´10æœˆ29æ—¥ 16:34:59
  * */
 public class SetPwdResActivity extends Activity {
 	
@@ -28,6 +28,6 @@ public class SetPwdResActivity extends Activity {
 		
 		String pwd = shareDate.getString("GUE_PWD", "NO HAVE PWD !");
 		
-		showInfo.setText("ÉèÖÃ³É³É¹¦£¡ÄúÉèÖÃµÄÊÖÊÆÃÜÂëÊÇ£º"+pwd);
+		showInfo.setText("è®¾ç½®æˆæˆåŠŸï¼æ‚¨è®¾ç½®çš„æ‰‹åŠ¿å¯†ç æ˜¯ï¼š"+pwd);
 	}
 }

@@ -1,4 +1,4 @@
-package cn.com.unfind.ges;
+ï»¿package cn.com.unfind.ges;
 
 import cn.com.unfind.ges.view.NinePointLineView;
 import android.os.Bundle;
@@ -10,15 +10,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 /**
- * ×÷ÓÃ£º²âÊÔ¾Å¹¬¸ñÊÖÊÆÃÜÂë
- * ×÷Õß£ºunfind
- * Ê±¼ä£º2013Äê10ÔÂ29ÈÕ 09:37:54
+ * ä½œç”¨ï¼šæµ‹è¯•ä¹å®«æ ¼æ‰‹åŠ¿å¯†ç 
+ * ä½œè€…ï¼šunfind
+ * æ—¶é—´ï¼š2013å¹´10æœˆ29æ—¥ 09:37:54
  * */
 public class MainActivity extends Activity {
 	
-	private LinearLayout nine_con;//¾Å¹¬¸ñÈİÆ÷
+	private LinearLayout nine_con;//ä¹å®«æ ¼å®¹å™¨
 	
-	NinePointLineView nv;//¾Å¹¬¸ñView
+	NinePointLineView nv;//ä¹å®«æ ¼View
 	
 	TextView showInfo;
 	
@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		
-		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//ÉèÖÃ±êÌâ²»ÏÔÊ¾
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//è®¾ç½®æ ‡é¢˜ä¸æ˜¾ç¤º
 		
 		setContentView(R.layout.main);
 		
@@ -47,9 +47,9 @@ public class MainActivity extends Activity {
 
 	
 	/**
-	 * ×÷ÓÃ£º»ñÈ¡ÏÖÔÚÃÜÂëµÄÉèÖÃ²½Öè
-	 * ×÷Õß£ºunfind
-	 * Ê±¼ä£º2013Äê10ÔÂ29ÈÕ 14:20:36
+	 * ä½œç”¨ï¼šè·å–ç°åœ¨å¯†ç çš„è®¾ç½®æ­¥éª¤
+	 * ä½œè€…ï¼šunfind
+	 * æ—¶é—´ï¼š2013å¹´10æœˆ29æ—¥ 14:20:36
 	 * */
 	public void getSetPwd(){
 		
@@ -59,13 +59,13 @@ public class MainActivity extends Activity {
 		
 		if(!isSetFirst){
 			
-			showInfo.setText("ÇëÉèÖÃÊÖÊÆÃÜÂë");
+			showInfo.setText("è¯·è®¾ç½®æ‰‹åŠ¿å¯†ç ");
 			
 			shareDate.edit().clear().commit();
 			
 		}else{
 			
-			showInfo.setText("ÇëÔÙ´ÎÈ·ÈÏÊÖÊÆÃÜÂë");
+			showInfo.setText("è¯·å†æ¬¡ç¡®è®¤æ‰‹åŠ¿å¯†ç ");
 			
 		}
 		
@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
 		
 		if(is_second_error){
 			
-			showInfo.setText("ºÍµÚÒ»´ÎÊäÈëÊÖÊÆÃÜÂë²»Ò»ÖÂ£¬ÖØĞÂÊäÈë");
+			showInfo.setText("å’Œç¬¬ä¸€æ¬¡è¾“å…¥æ‰‹åŠ¿å¯†ç ä¸ä¸€è‡´ï¼Œé‡æ–°è¾“å…¥");
 			
 		}
 		

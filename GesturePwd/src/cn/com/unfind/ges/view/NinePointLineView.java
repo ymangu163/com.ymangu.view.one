@@ -1,4 +1,4 @@
-package cn.com.unfind.ges.view;
+ï»¿package cn.com.unfind.ges.view;
 
 
 import cn.com.unfind.ges.MainActivity;
@@ -20,9 +20,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * ×÷ÓÃ£ºÊÖÊÆÃÜÂëµÄ¾Å¹¬¸ñ 
- * ×÷Õß£ºufnind 
- * Ê±¼ä£º2013Äê10ÔÂ29ÈÕ 09:34:52
+ * ä½œç”¨ï¼šæ‰‹åŠ¿å¯†ç çš„ä¹å®«æ ¼ 
+ * ä½œè€…ï¼šufnind 
+ * æ—¶é—´ï¼š2013å¹´10æœˆ29æ—¥ 09:34:52
  * */
 public class NinePointLineView extends View {
 
@@ -64,7 +64,7 @@ public class NinePointLineView extends View {
 
 		cxt = context;
 
-//		this.setBackgroundColor(Color.WHITE);//ÉèÖÃÕû¸ö±³¾°
+//		this.setBackgroundColor(Color.WHITE);//è®¾ç½®æ•´ä¸ªèƒŒæ™¯
 
 		initPaint();
 	}
@@ -73,7 +73,7 @@ public class NinePointLineView extends View {
 
 		super(context, attrs);
 
-//		this.setBackgroundColor(Color.WHITE);//ÉèÖÃÕû¸ö¾Å¹¬¸ñµÄ±³¾°
+//		this.setBackgroundColor(Color.WHITE);//è®¾ç½®æ•´ä¸ªä¹å®«æ ¼çš„èƒŒæ™¯
 
 		initPaint();
 	}
@@ -310,7 +310,7 @@ public class NinePointLineView extends View {
 
 		paint.setColor(Color.GRAY);
 
-		paint.setStrokeWidth(30);//ÉèÖÃÁ½¸öµãÖ®¼äµÄÏßµÄ±±¾©µÄ¿í¶È
+		paint.setStrokeWidth(30);//è®¾ç½®ä¸¤ä¸ªç‚¹ä¹‹é—´çš„çº¿çš„åŒ—äº¬çš„å®½åº¦
 
 		paint.setAntiAlias(true);
 
@@ -325,7 +325,7 @@ public class NinePointLineView extends View {
 
 		paint.setColor(Color.WHITE);
 
-		paint.setStrokeWidth(20);//ÉèÖÃÁ½¸öµãÖ®¼äµÄÏßµÄ¿í¶È
+		paint.setStrokeWidth(20);//è®¾ç½®ä¸¤ä¸ªç‚¹ä¹‹é—´çš„çº¿çš„å®½åº¦
 
 		paint.setAntiAlias(true);
 
@@ -487,16 +487,16 @@ public class NinePointLineView extends View {
 
 	}
 
-	public String getPwd() {//»ñÈ¡±¾´ÎµÄÃÜÂë
+	public String getPwd() {//è·å–æœ¬æ¬¡çš„å¯†ç 
 
 		return lockString.toString();
 
 	}
 	
 	/**
-	 * ×÷ÓÃ£º±£´æÃÜÂë²¢ÇÒÅĞ¶Ï½çÃæµÄÌø×ª
-	 * ×÷Õß£ºunfind
-	 * Ê±¼ä£º2013Äê10ÔÂ29ÈÕ 14:47:47
+	 * ä½œç”¨ï¼šä¿å­˜å¯†ç å¹¶ä¸”åˆ¤æ–­ç•Œé¢çš„è·³è½¬
+	 * ä½œè€…ï¼šunfind
+	 * æ—¶é—´ï¼š2013å¹´10æœˆ29æ—¥ 14:47:47
 	 * */
 	public void savePwd(){
 		
@@ -506,13 +506,13 @@ public class NinePointLineView extends View {
 		
 		boolean isSetFirst = shareDate.getBoolean("IS_SET_FIRST", false);
 		
-		if(isSetFirst){//Èç¹ûµÚÒ»´ÎÒÑ¾­ÉèÖÃÃÜÂë£¬ÑéÖ¤µÚ¶ş´ÎºÍµÚÒ»´ÎÊÇ·ñÒ»ÖÂ
+		if(isSetFirst){//å¦‚æœç¬¬ä¸€æ¬¡å·²ç»è®¾ç½®å¯†ç ï¼ŒéªŒè¯ç¬¬äºŒæ¬¡å’Œç¬¬ä¸€æ¬¡æ˜¯å¦ä¸€è‡´
 			
 			String pwd = this.getPwd();
 			
 			String first_pwd = shareDate.getString("FIRST_PWD", "NO HAVE PWD");
 			
-			if(pwd.equals(first_pwd)){//µÚ¶ş´ÎÃÜÂëºÍµÚÒ»´ÎÃÜÂëÒ»Ñù   ÉèÖÃ³É¹¦
+			if(pwd.equals(first_pwd)){//ç¬¬äºŒæ¬¡å¯†ç å’Œç¬¬ä¸€æ¬¡å¯†ç ä¸€æ ·   è®¾ç½®æˆåŠŸ
 				
 				shareDate.edit().clear().commit();
 				
@@ -522,7 +522,7 @@ public class NinePointLineView extends View {
 				
 				intent.setClass(cxt, SetPwdResActivity.class);
 				
-			}else{//µÚ¶ş´ÎÊäÈëµÄÃÜÂëºÍµÚÒ»´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ
+			}else{//ç¬¬äºŒæ¬¡è¾“å…¥çš„å¯†ç å’Œç¬¬ä¸€æ¬¡è¾“å…¥çš„å¯†ç ä¸ä¸€è‡´
 				
 				
 				shareDate.edit().putBoolean("SECOND_ERROR", true).commit();
@@ -531,7 +531,7 @@ public class NinePointLineView extends View {
 				
 			}
 			
-		}else{//µÚÒ»´ÎÉèÖÃÊÖÊÆÃÜÂë
+		}else{//ç¬¬ä¸€æ¬¡è®¾ç½®æ‰‹åŠ¿å¯†ç 
 			
 			shareDate.edit().clear().commit();
 			
